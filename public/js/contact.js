@@ -2,7 +2,7 @@
   "use strict";
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  let forms = document.querySelector("#contact-form");
+  let form = document.querySelector("#contact-form");
 
   document
     .querySelector("#contact-form-button")
