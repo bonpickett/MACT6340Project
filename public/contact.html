@@ -24,7 +24,41 @@
   </head>
 
   <body>
-    <container>
+    <!-- Header -->
+    <header class="p-3 text-bg-dark">
+      <nav id="top-nav" class="navbar navbar-expand navbar-dark fixed-top bg-secondary" aria-label="Navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img class="me-auto" src="./images/favicon.ico" height="35" role="img" alt="">
+          </a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html#featured">Featured</a>
+              </li>
+              <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="/projects.html">Projects</a>
+              </li>
+              <a class="nav-link" href="/index.html#about">Artist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+              <li class="d-none nav-item only-artist">
+                <a class="nav-link" href="/new-project">New</a>
+              </li>
+            </ul>
+            <div>
+              <button id="wallet-connect" type="button" class="btn btn-outline-light">Connect
+                Wallet</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
       <section>
         <div
           id="contact-header"
@@ -71,11 +105,8 @@
               <!-- Email -->
               <div class="row m-5">
                 <div class="col">
-                  <!-- <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
-            > -->
                   <input
-                    id="mail"
+                    id="email-address"
                     type="email"
                     class="form-control"
                     placeholder="Email address"
@@ -87,7 +118,9 @@
                   </div>
                 </div>
               </div>
+            </div>
 
+            <div class="col-md-7">
               <!-- Subject -->
               <div class="row m-5">
                 <div class="col">
@@ -101,9 +134,7 @@
                   />
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-7">
               <!-- Text Box -->
               <div class="row m-5">
                 <div class="mb-3 input-group-lg">
@@ -121,13 +152,15 @@
                   >
                     Submit
                   </button>
+                  <span class="m-2" id="contact-button-response"></span>
+                  <span class="m-2" id="result"></span>
                 </div>
               </div>
             </div>
           </form>
         </div>
       </section>
-    </container>
+    </main>
 
     <!-- Footer -->
     <div class="container">
