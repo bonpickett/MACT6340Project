@@ -26,10 +26,22 @@
   <body>
     <!-- Header -->
     <header class="p-3 text-bg-dark">
-      <nav id="top-nav" class="navbar navbar-expand navbar-dark fixed-top bg-secondary" aria-label="Navbar">
+      <nav
+        id="top-nav"
+        class="navbar navbar-expand navbar-light fixed-top bg-light"
+        style="--bs-bg-opacity: 0.75"
+        aria-label="Navbar"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">
-            <img class="me-auto" src="./images/favicon.ico" height="35" role="img" alt="">
+          <a class="navbar-brand" href="#splash"
+            >Bonnie Pickett
+            <!-- <img
+            class="me-auto"
+            src="./images/favicon.ico"
+            height="35"
+            role="img"
+            alt=""
+          /> -->
           </a>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto">
@@ -37,10 +49,10 @@
                 <a class="nav-link" href="/index.html#featured">Featured</a>
               </li>
               <li class="nav-item">
-              <li class="nav-item">
                 <a class="nav-link" href="/projects.html">Projects</a>
               </li>
-              <a class="nav-link" href="/index.html#about">Artist</a>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html#about">Artist</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/contact.html">Contact</a>
@@ -50,8 +62,13 @@
               </li>
             </ul>
             <div>
-              <button id="wallet-connect" type="button" class="btn btn-outline-light">Connect
-                Wallet</button>
+              <button
+                id="wallet-connect"
+                type="button"
+                class="btn btn-outline-light"
+              >
+                Connect Wallet
+              </button>
             </div>
           </div>
         </div>
@@ -141,12 +158,13 @@
                   <textarea
                     class="form-control"
                     placeholder="Message"
-                    id="msg"
-                    rows="3"
+                    id="contact-textbox"
+                    rows="5"
                   ></textarea>
 
                   <button
                     id="contact-form-button"
+                    name="formButton"
                     type="submit"
                     class="btn btn-primary my-3"
                   >
