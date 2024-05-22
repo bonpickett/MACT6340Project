@@ -20,8 +20,10 @@
     });
   function sendTheEmail() {
     let obj = {
-      sub: "Somene submitted a contact form!",
+      sub: `${document.querySelector("#sub").value}`,
       txt: `${document.querySelector("#first-name").value} ${
+        document.querySelector("#middle-initial").value
+      } ${
         document.querySelector("#last-name").value
       } sent you a message that reads ${
         document.querySelector("#contact-textbox").value

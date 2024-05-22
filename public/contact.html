@@ -25,7 +25,7 @@
 
   <body>
     <!-- Header -->
-    <header class="p-3 text-bg-dark">
+    <header class="p-3">
       <nav
         id="top-nav"
         class="navbar navbar-expand navbar-light fixed-top bg-light"
@@ -33,15 +33,14 @@
         aria-label="Navbar"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#splash"
-            >Bonnie Pickett
-            <!-- <img
-            class="me-auto"
-            src="./images/favicon.ico"
-            height="35"
-            role="img"
-            alt=""
-          /> -->
+          <a class="navbar-brand" href="/index.html">
+            <img
+              class="me-auto"
+              src="./images/Initials_Blue.png"
+              height="35"
+              role="img"
+              alt=""
+            />
           </a>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto">
@@ -65,7 +64,7 @@
               <button
                 id="wallet-connect"
                 type="button"
-                class="btn btn-outline-light"
+                class="btn btn-outline-dark"
               >
                 Connect Wallet
               </button>
@@ -79,7 +78,7 @@
       <section>
         <div
           id="contact-header"
-          class="beginning pt-5 m-2 text-white text-center"
+          class="beginning pt-5 m-2 text-seashells text-center"
         >
           <div class="padding"></div>
           <h1 class="display-3">Connect With Me</h1>
@@ -103,6 +102,17 @@
                     placeholder="First name"
                     aria-label="First name"
                     required
+                  />
+                </div>
+
+                <!-- Middle Initial -->
+                <div class="col-3">
+                  <input
+                    id="middle-initial"
+                    type="text"
+                    class="form-control"
+                    placeholder="Middle"
+                    aria-label="Middle"
                   />
                 </div>
 
@@ -130,7 +140,7 @@
                     aria-describedby="emailHelp"
                     required
                   />
-                  <div id="emailFeedback" class="invalid-feedback">
+                  <div id="emailHelp" class="invalid-feedback">
                     Format should be example@example.com.
                   </div>
                 </div>
@@ -223,7 +233,7 @@
             <a
               class="text-body-white"
               target="_blank"
-              href="https://www.linkedin.com/in/bonnie-pickett/"
+              href="https://www.linkedin.com/in/bonnie-pickett"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"

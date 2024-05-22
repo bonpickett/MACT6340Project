@@ -25,7 +25,7 @@
 
   <body>
     <!-- Header -->
-    <header class="p-3 text-bg-dark">
+    <header class="p-3">
       <nav
         id="top-nav"
         class="navbar navbar-expand navbar-light fixed-top bg-light"
@@ -33,15 +33,14 @@
         aria-label="Navbar"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#splash"
-            >Bonnie Pickett
-            <!-- <img
+          <a class="navbar-brand" href="#splash">
+            <img
               class="me-auto"
-              src="./images/favicon.ico"
+              src="./images/Initials_Blue.png"
               height="35"
               role="img"
               alt=""
-            /> -->
+            />
           </a>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto">
@@ -65,7 +64,7 @@
               <button
                 id="wallet-connect"
                 type="button"
-                class="btn btn-outline-light"
+                class="btn btn-outline-dark"
               >
                 Connect Wallet
               </button>
@@ -78,7 +77,7 @@
     <main>
       <!-- Splash page -->
       <section>
-        <div id="splash" class="section">
+        <div id="splash" class="section text-center">
           <div class="splashpadding"></div>
           <div id="hero-text">
             <h1 class="display-1">Bonnie Pickett</h1>
@@ -91,28 +90,42 @@
       <section>
         <div id="featured" class="section translate-center">
           <div class="padding"></div>
-          <div class="row justify-content-center">
-            <div class="col-10 text-center justify-content-center">
-              <p class="display-2 text-white">Feature Project</p>
-              <div class="row">
-                <div id="featuredImage" class="col-7 m-2">
+          <div class="container col-xxl-8">
+            <div class="row flex-lg-row align-items-center g-5 py-5">
+              <h1 class="display-1 text-center lh-1 mb-3">Featured Project</h1>
+              <div class="col-10 col-sm-12 col-lg-8">
+                <div id="featuredImage">
                   <img
-                    class="me-auto img-fluid"
+                    class="d-block mx-lg-auto img-fluid"
                     src="./images/genart.png"
                     role="img"
-                    alt="featured project image"
+                    alt="1960s Living Room"
                   />
                 </div>
-                <div id="featuredInfo" class="text-start col-3 m-2 text-light">
+                </div>
+                <div id="featuredInfo" class="col-lg-4">
                   <div>Name: 1960s Living Room</div>
                   <div>
                     Description: Generative images of homes in the 1950s-1970s.
+                  </div>
+                  <div>Editions: 25</div>
+                  <div>Price: 1 Tezos</div>
+                  <div>Opens: August 1, 2024</div>
+                  <div>
+                    <a href="/project.html"
+                      ><button
+                        type="button"
+                        class="my-2 btn btn-outline-light btn-lg px-4 me-md-2"
+                      >
+                        View This Project
+                      </button></a
+                    >
                   </div>
                   <div>
                     <a href="/projects.html"
                       ><button
                         type="button"
-                        class="btn btn-outline-light btn-lg px-4 me-md-2"
+                        class="my-2 btn btn-outline-light btn-lg px-4 me-md-2"
                       >
                         View All Projects
                       </button></a
@@ -135,14 +148,14 @@
                 <img
                   src="./images/headshot.jpg"
                   class="d-block mx-lg-auto img-fluid"
-                  alt="Bootstrap Themes"
+                  alt="Bonnie Pickett"
                   width="700"
                   height="500"
                   loading="lazy"
                 />
               </div>
               <div class="col-lg-8">
-                <h1 class="display-5 text-light lh-1 mb-3">About the Artist</h1>
+                <h1 class="display-5 lh-1 mb-3">About the Artist</h1>
                 <p class="lead">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Officiis inventore facilis voluptates alias illo ab! Eligendi
@@ -209,7 +222,7 @@
             <a
               class="text-body-white"
               target="_blank"
-              href="https://www.linkedin.com/in/bonnie-pickett/"
+              href="https://www.linkedin.com/in/bonnie-pickett"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
