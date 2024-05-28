@@ -5,9 +5,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../images/Initials_Blue.png" />
-    <title>Contact</title>
+    <title>Personal NFT Mint</title>
     <meta name="author" content="Bonnie Pickett" />
-    <meta name="description" conetent="A page to contact artist." />
+    <meta name="description" conetent="A personal NFT mint for an artist." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,7 +33,7 @@
         aria-label="Navbar"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">
+          <a class="navbar-brand" href="/#splash">
             <img
               class="me-auto"
               src="./images/Initials_Blue.png"
@@ -42,34 +42,26 @@
               alt="BP"
             />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="/index.html#featured">Featured</a>
+                <a class="nav-link" href="/#featured">Featured</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/projects.html">Projects</a>
+                <a class="nav-link" href="/projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/index.html#about">About</a>
+                <a class="nav-link" href="/#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contact.html">Contact</a>
+                <a class="nav-link" href="/contact">Contact</a>
               </li>
-              <li class="d-none nav-item only-artist">
-                <a class="nav-link" href="/new-project">New</a>
-              </li>
+              <!-- <li class="d-none nav-item only-artist">
+                <a class="nav-link" href="/new-project.ejs">New</a>
+              </li> -->
             </ul>
             <div>
               <button
@@ -86,117 +78,103 @@
     </header>
 
     <main>
+      <!-- Splash page -->
       <section>
-        <div
-          id="contact-header"
-          class="beginning pt-5 m-2 text-seashells text-center"
-        >
-          <div class="padding"></div>
-          <h1 class="display-3">Connect With Me</h1>
-          <p class="lead">
-            Use the form below to say hello and send a message!
-          </p>
+        <div id="splash" class="section text-center">
+          <div class="splashpadding"></div>
+          <div id="hero-text">
+            <h1 class="display-1">Bonnie Pickett</h1>
+            <h2>Generative Art Projects</h2>
+          </div>
         </div>
       </section>
 
+      <!-- Featured project area -->
       <section>
-        <div class="row">
-          <form id="contact-form" class="p-4 needs-validation row g-0">
-            <div class="col-md-5">
-              <!-- First Name -->
-              <div class="row m-5">
-                <div class="col">
-                  <input
-                    id="first-name"
-                    type="text"
-                    class="form-control"
-                    placeholder="First name"
-                    aria-label="First name"
-                    required
+        <div id="featured" class="section translate-center">
+          <div class="padding"></div>
+          <div class="container col-xxl-8">
+            <div class="row flex-lg-row align-items-center g-5 py-5">
+              <h1 class="display-2 text-center lh-1 mb-3">Featured Project</h1>
+              <div class="col-10 col-sm-12 col-lg-8">
+                <div id="featuredImage">
+                  <img
+                    class="d-block mx-lg-auto img-fluid"
+                    src="./images/genart.png"
+                    role="img"
+                    alt="1960s Living Room"
                   />
                 </div>
-
-                <!-- Middle Initial -->
-                <div class="col-3">
-                  <input
-                    id="middle-initial"
-                    type="text"
-                    class="form-control"
-                    placeholder="Middle"
-                    aria-label="Middle"
-                  />
                 </div>
-
-                <!-- Last Name -->
-                <div class="col">
-                  <input
-                    id="last-name"
-                    type="text"
-                    class="form-control"
-                    placeholder="Last name"
-                    aria-label="Last name"
-                    required
-                  />
-                </div>
-              </div>
-
-              <!-- Email -->
-              <div class="row m-5">
-                <div class="col">
-                  <input
-                    id="email-address"
-                    type="email"
-                    class="form-control"
-                    placeholder="Email address"
-                    aria-describedby="emailHelp"
-                    required
-                  />
-                  <div id="emailHelp" class="invalid-feedback">
-                    Format should be example@example.com.
+                <div id="featuredInfo" class="col-lg-4">
+                  <div>Name: 1960s Living Room</div>
+                  <div>
+                    Description: Generative images of homes in the 1950s-1970s.
+                  </div>
+                  <div>Editions: 25</div>
+                  <div>Price: 1 Tezos</div>
+                  <div>Opens: August 1, 2024</div>
+                  <div>
+                    <a href="/project"
+                      ><button
+                        type="button"
+                        class="my-2 btn btn-outline-light btn-lg px-4 me-md-2"
+                      >
+                        View This Project
+                      </button></a
+                    >
+                  </div>
+                  <div>
+                    <a href="/projects"
+                      ><button
+                        type="button"
+                        class="my-2 btn btn-outline-light btn-lg px-4 me-md-2"
+                      >
+                        View All Projects
+                      </button></a
+                    >
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="col-md-7">
-              <!-- Subject -->
-              <div class="row m-5">
-                <div class="col">
-                  <input
-                    id="sub"
-                    type="subject"
-                    class="form-control"
-                    placeholder="Subject"
-                    aria-label="Subject"
-                    required
-                  />
-                </div>
+      <!-- About -->
+      <section>
+        <div id="about" class="aboutsection translate-center">
+          <div class="padding"></div>
+          <div class="container col-xxl-8 px-2 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-4">
+                <img
+                  src="./images/headshot.jpg"
+                  class="d-block mx-lg-auto img-fluid"
+                  alt="Bonnie Pickett"
+                  width="700"
+                  height="500"
+                  loading="lazy"
+                />
               </div>
-
-              <!-- Text Box -->
-              <div class="row m-5">
-                <div class="mb-3 input-group-lg">
-                  <textarea
-                    class="form-control"
-                    placeholder="Message"
-                    id="contact-textbox"
-                    rows="5"
-                  ></textarea>
-
-                  <button
-                    id="contact-form-button"
-                    name="formButton"
-                    type="submit"
-                    class="btn btn-primary my-3"
+              <div class="col-lg-8">
+                <h1 class="display-4 lh-1 mb-3">About the Artist</h1>
+                <p class="lead">
+                  Bonnie is a Higher Ed professional based in Dallas, Texas who specializes in user experience design. She loves to bring accessible and user friendly technology to the college experience. Bonnie received a Bachelor of Arts in Communication and Theatre from Mount Vernon Nazarene University in Mount Vernon, Ohio and a Certificate in Graphic Design from Southern Methodist University in Dallas, Texas. She is currently pursuing a Master's of Arts in Creative Technology from Southern Methodist University.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <a href="/contact">
+                    <button
+                      type="button"
+                      class="btn btn-outline-light btn-lg px-4 me-md-2"
+                    >
+                      Contact
+                    </button></a
                   >
-                    Submit
-                  </button>
-                  <span class="m-2" id="contact-button-response"></span>
-                  <span class="m-2" id="result"></span>
                 </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
       </section>
     </main>
@@ -268,29 +246,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="./js/contact.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
-
-<!-- Original Form -->
-<!-- <form action="/mail" method="post">
-      <ul>
-        <li>
-          <label class="text-white" for="name">Name:</label>
-          <input type="text" id="name" name="user_name" />
-        </li>
-        <li>
-          <label class="text-white" for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email" />
-        </li>
-        <li>
-          <label class="text-white" for="msg">Message:</label>
-          <textarea id="msg" name="user_message"></textarea>
-        </li>
-        <li class="button">
-          <button id="contact-form-button" type="submit">
-            Send your message
-          </button>
-        </li>
-      </ul>
-    </form> -->
