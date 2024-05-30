@@ -1,54 +1,54 @@
 html {
-  box-sizing: border-box;
+ box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+ box-sizing: inherit;
 }
 
 body {
-  /* background-color: rgb(1, 35, 41); */
-  background-image: linear-gradient(
-    -25deg,
-    #30d2be 0%,
-    #3584a7 51%,
-    #473b7b 100%
-  );
-  font-family: "Poppins", sans-serif;
-  color: seashell;
+ /* background-color: rgb(1, 35, 41); */
+ background-image: linear-gradient(
+  -25deg,
+  #30d2be 0%,
+  #3584a7 51%,
+  #473b7b 100%
+ );
+ font-family: "Poppins", sans-serif;
+ color: seashell;
 }
 
 #splash {
-  min-height: 800px;
-  background: url("/images/whitehaze.png");
-  background-position: center;
-  background-size: cover;
-  background-attachment: scroll;
+ min-height: 800px;
+ background: url("/images/whitehaze.png");
+ background-position: center;
+ background-size: cover;
+ background-attachment: scroll;
 }
 
 .header {
-  color: darksalmon;
-  font-size: 1em;
+ color: darksalmon;
+ font-size: 1em;
 }
 
 .section {
-  min-height: 500px;
-  color: seashell;
-  text-align: left;
-  font-size: 1.5em;
+ min-height: 500px;
+ color: seashell;
+ text-align: left;
+ font-size: 1.5em;
 }
 
 .aboutsection {
-  min-height: 500px;
-  color: seashell;
-  text-align: left;
+ min-height: 500px;
+ color: seashell;
+ text-align: left;
 }
 
 .padding {
-  min-height: 100px;
+ min-height: 100px;
 }
 
 .splashpadding {
-  min-height: 300px;
+ min-height: 300px;
 }
