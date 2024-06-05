@@ -16,7 +16,7 @@ app.get("/", async (req, res, next) => {
  await db
   .connect()
   .then(async () => {
-   projects = db.getALLProjects();
+   projects = await db.getALLProjects();
    console.log(projects);
    res.render("index.ejs");
   })
