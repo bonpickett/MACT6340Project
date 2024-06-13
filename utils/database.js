@@ -30,6 +30,6 @@ export async function connect() {
 }
 
 export async function getALLProjects() {
- const [rows] = await pool.query(`SELECT * FROM projects;`);
+ const [rows] = await pool.query(`Select * FROM projects;`);
  return rows;
 }
