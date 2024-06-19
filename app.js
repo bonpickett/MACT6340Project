@@ -1,13 +1,15 @@
 import express from "express";
-import dotenv from "dotenv";
 import * as utils from "./utils/utils.js";
-dotenv.config();
 import * as db from "./utils/database.js";
+import dotenv from "dotenv";
+dotenv.config();
+import cors from "cors";
 
-let data = ["Project 1", "Project 2", "Project 3"];
+// let data = ["Project 1", "Project 2", "Project 3"];
 let projects = [];
 
 const app = express();
+app.use(cors());
 const port = 3000;
 app.set("view engine", "ejs");
 app.use(express.json());
@@ -52,7 +54,11 @@ app.post("/mail", async (req, res, err) => {
 
 app.use((err, req, res, next) => {
  console.log(err);
- res.render("error.ejs");
+ msg = err.message;
+ if (msg != "No project with that ID") {
+  msg =
+   "There was an internal error. Apologies. We are working on cleaning up the mess.";
+ }
 });
 
 app.listen(port, () => {

@@ -4,7 +4,14 @@
  let userAddress = null;
  let connect = document.querySelector("#wallet-connect");
 
- connectWallet();
+ //  connectWallet();
+
+ if (window.etherum) {
+  connectWallet();
+ } else {
+  userAddress = null;
+  connect.innerHTML = "Connect Wallet";
+ }
 
  connect.addEventListener("click", async () => {
   connectWallet();
