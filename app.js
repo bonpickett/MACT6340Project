@@ -30,7 +30,7 @@ app.get("/projects", (req, res) => {
 
 app.get("/project/:id", (req, res) => {
  let id = req.params.id;
- if (id > data.length) {
+ if (id > projects.length) {
   throw new Error("No project with that ID");
  }
  res.render("project.ejs", { project: projects[id - 1], which: id });
@@ -56,9 +56,9 @@ app.use((err, req, res, next) => {
  console.log(err);
  msg = err.message;
  if (msg != "No project with that ID") {
-  msg =
-   "There was an internal error. Apologies. We are working on cleaning up the mess.";
+  msg = "OOPS! There was an internal error.";
  }
+ res.render("error.ejs", { msg: msg });
 });
 
 app.listen(port, () => {
