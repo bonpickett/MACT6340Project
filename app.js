@@ -5,7 +5,6 @@ import dotenv from "dotenv";
 dotenv.config();
 import cors from "cors";
 
-// let data = ["Project 1", "Project 2", "Project 3"];
 let projects = [];
 
 const app = express();
