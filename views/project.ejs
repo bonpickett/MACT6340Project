@@ -23,12 +23,65 @@
   <link rel="stylesheet" href="../css/style.css" />
  </head>
 
- <body>
+ <!-- <body>
   <%- include('header');%>
   <div class="container-fluid py-5">
    <div>Project Page for <%=which %></div>
    <div class="section"></div>
-  </div>
+  </div> -->
+
+  <body>
+    <%- include('header'); %>
+    <div class="spacer">
+    </div>
+    <main>
+      <div class="container">
+      </div>
+      <section>
+        <div class="row text-center justify-content-center">
+          <div class="col-10 mb-5">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-4 mt-4">
+                <div class="card m-2">
+                  <img src=<%=project.img_url  %> class="card-img-top" alt="..." />
+                  <div>
+                    <div class="card-title">
+                      <h1><%=project.project_name  %></h1>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <a id="mint-button" class="btn btn-primary">Mint</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 col-md-6 mt-2 text-start">
+                <p>
+                <h3 class="topic">Project name: </h3><%=project.project_name  %></p>
+                <p>
+                <h3 class="topic">Project description: </h3><%=project.project_description  %></p>
+                <div class="row">
+                  <div class="col-5">
+                    <h3 class="topic">Price in ETH: </h3><%=project.price_eth  %>
+                  </div>
+                  <div class="col-5">
+                    <h3 class="topic">Quantity: </h3><%=project.quantity  %>
+                  </div>
+                </div>
+                <p>
+                <h3 class="topic">Opening date: </h3><%=project.open_date_gmt  %></p>
+                <p>
+                <h3 class="topic">Royalties: </h3>The artist will get <%=project.royalty_percent  %>% of secondary sales
+                </p>
+                <p>
+                <h3 class="topic">Status: </h3>Active - 0 of <%=project.quantity  %> minted</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </main>
+  
 
   <div class="container-fluid"><%- include('footer');%></div>
 
