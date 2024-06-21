@@ -25,20 +25,21 @@
 
  <body>
   <%- include('header');%>
-  <main>
+  <div class="section"></div>
+  <div
+   class="container-fluid d-flex flex-column text-center justify-content-center">
+   <h1 class="display-2 mb-5">Projects</h1>
    <div
-    class="section container-fluid d-flex flex-column justify-content-center align-items-center">
-    <h1 class="display-2 mb-5">Projects</h1>
-    <div class="m-1 row text-center justify-content-center">
-     <% projectArray.forEach((item, index) => {%>
-     <div class="col-10">
-      <% let link ="/project/"+item.id - 1 %> <%- include('projectCard', {image:
-      item.img_url, name: item.project_name, ident: item.id - 1}); %>
-     </div>
-     <% }); %>
+    class="m-1 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 text-center justify-content-center">
+    <% projectArray.forEach( (item, index) => { %>
+    <div class="col-10">
+     <%- include('projectCard', {ident: item.id, image: item.img_url, name:
+     item.project_name}); %>
     </div>
+    <% }); %>
    </div>
-  </main>
+  </div>
+
   <div class="container-fluid"><%- include('footer');%></div>
 
   <script
