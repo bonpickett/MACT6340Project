@@ -1,16 +1,14 @@
-<div class="card m-2 h-100 fadein" style="width: 18rem">
+<div class="card m-2 h-100 fadein">
  <img
   src="<%=image %>"
   class="card-img-top"
   alt="An image of the <%= name %> project" />
  <div>
-  <div class="card-title">
+  <div class="card-title col text-center">
    <h3><%= name %></h3>
   </div>
-  <div class="card-footer">
-   <a href="/project/<%= ident %>" class="btn btn-primary">Project Profile</a>
-  </div>
+ </div>
+ <div class="card-footer">
+  <a href="/project/<%= ident %>" class="btn btn-primary">Project Profile</a>
  </div>
 </div>
-
-<script type="module" src="./js/index.js"></script>
