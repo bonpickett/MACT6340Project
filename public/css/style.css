@@ -16,6 +16,7 @@ body {
 #splash {
  min-height: 800px;
  background: url("/images/whitehaze.png");
+ color: darksalmon;
  background-position: center;
  background-size: cover;
  background-attachment: scroll;
