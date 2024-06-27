@@ -8,7 +8,7 @@ html {
 }
 
 body {
- background-color: rgb(27, 82, 64);
+ background-color: rgb(38, 66, 51);
  font-family: "Poppins", sans-serif;
  color: seashell;
 }
@@ -16,7 +16,7 @@ body {
 #splash {
  min-height: 800px;
  background: url("/images/whitehaze.png");
- color: rgb(226, 172, 187);
+ color: rgb(241, 193, 148);
  font-size: 1em;
  background-position: center;
  background-size: cover;
