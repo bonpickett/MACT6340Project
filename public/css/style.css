@@ -48,3 +48,7 @@ body {
 .splashpadding {
  min-height: 300px;
 }
+
+.nav-text {
+ color: seashell;
+}
