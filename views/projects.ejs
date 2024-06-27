@@ -25,20 +25,17 @@
 
  <body>
   <%- include('header');%>
-  <div class="section py-5">
+  <div class="section">
    <div class="padding"></div>
+   <h1 class="display-2 mb-5 text-center justify-content-center">Projects</h1>
    <div
-    class="container-fluid d-flex flex-column text-center justify-content-center">
-    <h1 class="display-2 mb-5 py-5">Projects</h1>
-    <div
-     class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 text-center align-items-center justify-content-center">
-     <% projectArray.forEach( (item, index) => { %>
-     <div class="col-10">
-      <%- include('projectCard', {ident: item.id, image: item.img_url, name:
-      item.project_name}); %>
-     </div>
-     <% }); %>
+    class="m-1 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 text-center align-items-center justify-content-center">
+    <% projectArray.forEach( (item, index) => { %>
+    <div class="col-10">
+     <%- include('projectCard', {ident: item.id, image: item.img_url, name:
+     item.project_name}); %>
     </div>
+    <% }); %>
    </div>
   </div>
 
