@@ -18,7 +18,7 @@ body {
  background: url("/images/whitehaze.png");
  color: rgb(203, 106, 135);
  font-size: 1em;
- text-shadow: 2px 2px #333;
+ text-shadow: 3px 3px #333;
  background-position: center;
  background-size: cover;
  background-attachment: scroll;
@@ -29,6 +29,7 @@ body {
  font-optical-sizing: auto;
  font-weight: 600;
  font-style: italic;
+ font-size: 6em;
 }
 
 .header {
