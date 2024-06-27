@@ -41,28 +41,27 @@
    <section>
     <div id="featured" class="section translate-center">
      <div class="padding"></div>
-     <div class="container-fluid col-xxl-8">
-      <div class="row flex-lg-row align-items-center g-5 py-5">
-       <h1 class="display-2 text-center lh-1 mb-3">Featured Project</h1>
-       <div class="col-10 col-sm-12 col-lg-6">
-        <div id="featuredImage">
-         <%- include('projectCard', {image: featuredProject.img_url, name:
-         featuredProject.project_name, ident: featuredProject.id}); %>
-        </div>
-       </div>
-       <div id="featuredInfo" class="col-lg-6">
-        <div class="m-5">
-         <a href="/projects"
-          ><button
-           id="allProjectsButton"
-           type="button"
-           class="m-2 btn btn-outline-light">
-           See all projects
-          </button></a
-         >
-        </div>
-       </div>
+     <div
+      class="container-fluid d-flex flex-column text-center justify-content-center">
+      <h1 class="display-2 text-center lh-1 mb-3">Featured Project</h1>
+      <!-- <div class="col-sm-12 col-lg-6"> -->
+      <div id="featuredImage">
+       <%- include('projectCard', {image: featuredProject.img_url, name:
+       featuredProject.project_name, ident: featuredProject.id}); %>
       </div>
+      <!-- </div> -->
+      <!-- <div class="col-12 col-md-4"> -->
+      <div class="m-5">
+       <a href="/projects"
+        ><button
+         id="allProjectsButton"
+         type="button"
+         class="m-2 btn btn-outline-light">
+         See all projects
+        </button></a
+       >
+      </div>
+      <!-- </div> -->
      </div>
     </div>
    </section>
