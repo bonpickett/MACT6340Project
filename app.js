@@ -6,6 +6,8 @@ dotenv.config();
 import cors from "cors";
 
 let projects = [];
+let contracts = [];
+let mints = [];
 
 const app = express();
 app.use(cors());
@@ -17,6 +19,12 @@ app.use(express.static("public"));
 app.get("/", async (req, res, next) => {
  await db.connect().then(async () => {
   projects = await db.getALLProjects();
+  contracts = [];
+  mints = [];
+  projects.forEach((item) => {
+   contracts.push(item.contractAddress);
+   mints.push(0);
+  });
   console.log(projects);
   let projectRandom = Math.floor(Math.random() * projects.length);
   res.render("index.ejs", { featuredProject: projects[projectRandom] });
