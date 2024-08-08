@@ -48,11 +48,12 @@
       class="container-fluid d-flex flex-column text-center align-items-center justify-content-center">
       <h1 class="display-2 text-center lh-1 mb-3">Featured Project</h1>
       <!-- <div class="col-sm-12 col-lg-6"> -->
-        <div class="align-items-center justify-content-center">
-          <div id="project-holder" class="col-12 col-md-5">
-            <% let link ="/project/"+(featuredProject.id) %>
-            <%- include('projectCard', {image: featuredProject.img_url, name: featuredProject.project_name, ident: featuredProject.id, link: link} ); %>
-          </div>
+      <div id="project-holder" class="col-12 col-md-5">
+       <% let link ="/project/"+(featuredProject.id) %> <%-
+       include('projectCard', {image: featuredProject.img_url, name:
+       featuredProject.project_name, ident: featuredProject.id, link: link} );
+       %>
+      </div>
       <!-- </div> -->
       <!-- <div class="col-12 col-md-4"> -->
       <div class="m-5">
